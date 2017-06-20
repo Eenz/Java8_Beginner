@@ -1,9 +1,9 @@
 package by.blinov.chapter_2;
 
 public class OutArray {
-    public static void outArray(){
+    public static void outArray() {
         int[] arr = {1, 3, 5};
-        for (int elem : arr){
+        for (int elem : arr) {
             System.out.printf("%d", elem);
         }
     }
