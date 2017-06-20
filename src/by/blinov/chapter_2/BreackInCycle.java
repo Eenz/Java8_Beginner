@@ -15,6 +15,7 @@ public class BreackInCycle {
                 }
             }
         }
+        System.out.print("end");
     }
 
     public static void main(String[] args) {
