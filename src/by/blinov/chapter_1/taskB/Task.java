@@ -252,9 +252,9 @@ public class Task {
     public static void numFibonacchi() {
         if (array != null) {
             Scanner in = new Scanner(System.in);
-            System.out.println("Enter the Fibonacci number(form 1 to 20): ");
+            System.out.println("Enter the Fibonacci number(form 1 to 100): ");
             int num = in.nextInt();
-            if (num != 0 & num <= 20) {
+            if (num != 0 & num <= 100) {
                 int tmp1 = 1;
                 int tmp2 = 1;
                 System.out.print("Fibonacchi numbers: 1 1 ");
