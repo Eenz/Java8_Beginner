@@ -239,11 +239,34 @@ public class Task {
     public static void luckNum() {
         if (array != null) {
             System.out.print("Luck Nums: ");
-            int quantityNum = (int) ((Math.random() *(array.length-1)+ 1));
-            for(int i = 0; i < quantityNum; i++){
-                System.out.print(array[(int)(Math.random()*array.length)] + " ");
+            int quantityNum = (int) ((Math.random() * (array.length - 1) + 1));
+            for (int i = 0; i < quantityNum; i++) {
+                System.out.print(array[(int) (Math.random() * array.length)] + " ");
             }
             System.out.println();
+        } else {
+            error();
+        }
+    }
+
+    public static void numFibonacchi() {
+        if (array != null) {
+            Scanner in = new Scanner(System.in);
+            System.out.println("Enter the Fibonacci number(form 1 to 20): ");
+            int num = in.nextInt();
+            if (num != 0 & num <= 20) {
+                int tmp1 = 1;
+                int tmp2 = 1;
+                System.out.print("Fibonacchi numbers: 1 1 ");
+                for (int i = 0; i < num - 2; i++) {
+                    int tmp = tmp1 + tmp2 ;
+                    tmp1 = tmp2;
+                    tmp2 = tmp;
+                    System.out.print(tmp + " ");
+                }
+            }else{
+                System.out.println(" ERROR: Entered number does not enter into the gap! ");
+            }
         } else {
             error();
         }
@@ -286,5 +309,6 @@ public class Task {
         sortAscendingAndDecreasingOrder();
         sortByFrequencyOfOccurenceOfNumbers();
         luckNum();
+        numFibonacchi();
     }
 }
