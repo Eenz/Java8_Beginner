@@ -20,6 +20,8 @@ public class Task5 {
                 }
             }
         }
+        Task6 tk6 = new Task6();
+        tk6.getArr(array,array.length);
         return qualityOfNumOnlyEvenDigits;
     }
 
