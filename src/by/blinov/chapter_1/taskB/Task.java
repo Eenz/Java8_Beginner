@@ -259,12 +259,12 @@ public class Task {
                 int tmp2 = 1;
                 System.out.print("Fibonacchi numbers: 1 1 ");
                 for (int i = 0; i < num - 2; i++) {
-                    int tmp = tmp1 + tmp2 ;
+                    int tmp = tmp1 + tmp2;
                     tmp1 = tmp2;
                     tmp2 = tmp;
                     System.out.print(tmp + " ");
                 }
-            }else{
+            } else {
                 System.out.println(" ERROR: Entered number does not enter into the gap! ");
             }
         } else {
