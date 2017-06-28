@@ -15,7 +15,7 @@ public class SortBySurname {
         printBySurname();
     }
 
-    private void printBySurname() {
+    public void printBySurname() {
         /*
         этот метод выводит в консоль отсортированные данные по фамилии
          */
