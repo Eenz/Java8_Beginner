@@ -1,4 +1,5 @@
 package by.blinov.chapter_3.tasks.task_A.student;
+
 /*
 в данном методе идет поиск и вывод списки студентов для каждого факультета и курса;
  */
@@ -15,7 +16,7 @@ public class FilterByFacultyAndGroup {
             if (checkWhetherTheFaculty(st.getFaculty(i))) {
                 for (int j = 0; j < st.getLenghtArray(); j++) {
                     for (int k = 0; k < st.getLenghtArray(); k++) {
-                        if (st.getCourse(k) == j && st.getFaculty(i)== st.getFaculty(k)) {
+                        if (st.getCourse(k) == j && st.getFaculty(i) == st.getFaculty(k)) {
                             st.printDefineData(k);
                         }
                     }
@@ -29,7 +30,7 @@ public class FilterByFacultyAndGroup {
 
         int counter = 0;
         for (int i = 0; i < tempFaculty.length; i++) {
-            if (faculty==tempFaculty[i]) {
+            if (faculty == tempFaculty[i]) {
                 counter++;
             }
         }

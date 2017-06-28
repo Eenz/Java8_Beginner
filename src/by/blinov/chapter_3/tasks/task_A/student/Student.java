@@ -30,6 +30,10 @@ public class Student {
 
     }
 
+    public String[] getSurnameArr() {
+        return surname;
+    }
+
     public int getLenghtArray() {        // для получения длинны массивa
         return id.length;
     }

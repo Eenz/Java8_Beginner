@@ -25,13 +25,19 @@ public class Runner {
         FilterFaculty fil = new FilterFaculty();
         fil.filterFaculty("E");
         System.out.println();
+
         FilterByYear filb = new FilterByYear();
         filb.filterByYear(1997);
         System.out.println();
+
         FilterByFacultyAndGroup fil1 = new FilterByFacultyAndGroup();
         fil1.filterByFacultyAndGroup();
         System.out.println();
-        st.printAllData();
 
+        st.printAllData();
+        System.out.println();
+
+        SortBySurname sr = new SortBySurname();
+        sr.sortArray();
     }
 }
