@@ -12,9 +12,6 @@ public class SortBySurname {
         Student st = new Student();
         surname = st.getSurnameArr();
         Arrays.sort(surname);
-        for (int i = 0; i < surname.length; i++) {
-            System.out.println(surname[i]);
-        }
         printBySurname();
     }
 
